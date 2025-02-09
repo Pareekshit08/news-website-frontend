@@ -10,7 +10,7 @@ function List(){
 
     useEffect(()=>{
         const fetchit = async () =>{
-            const url = `http://localhost:3000/news/search`;
+            const url = `https://news-web-backend-7lre.onrender.com/news/search`;
             const response = await axios.get(url,{withCredentials:true,validateStatus:false});
             if(response.status == 200){
               console.log("Data fetched successfully");
