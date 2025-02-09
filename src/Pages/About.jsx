@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "../Components/SideBar";
 import Header from "../Components/Header";
 import FeedbackCarousel from "../Components/Carousel";
 function About(){
