@@ -1,0 +1,637 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Navbar Styling */
+
+.isActive{
+  /* background: rgb(104, 70, 115); */
+  color:white;
+  border: solid rgb(255, 255, 255) ;
+  border-width: 0px 0px 1px 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1e0326, #1f0625);
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f4a261;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  padding: 4px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.cta-buttons button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 12x;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.subscribe {
+  background-color: #f4a261;
+  color: white;
+}
+
+.subscribe:hover {
+  background-color: #e07a5f;
+}
+
+.login {
+  background-color: #6a994e;
+  color: white;
+}
+
+.login:hover {
+  background-color: #52734d;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .cta-buttons button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+}
+
+/* for the list part */
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #333;
+}
+
+/* News Container */
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-header {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Articles Grid */
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Article Card */
+.article-card {
+  background: rgb(34, 3, 44);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Article Image */
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Article Content */
+.article-content {
+  padding: 15px;
+}
+
+.article-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #eee6e6;
+}
+
+.article-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #f6f2f2;
+  text-align: justify;
+}
+
+/* Read More Link */
+.read-more {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #004499;
+}
+
+/* for the list part */
+
+
+
+/* FeedBack carousel */
+.feedback-carousel {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #4c0256;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.carousel-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.feedback-slide {
+  padding: 20px;
+}
+
+.feedback-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.feedback-author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5f5959;
+}
+/* FeedBack carousel */
+
+/* carusel arrow buttons */
+/* Override the default slick arrow styles */
+/* Base styles for slick arrows */
+
+.slick-prev, .slick-next {
+  font-size: 0; /* Hides default arrow text */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000000 !important;
+  border-radius: 50%;
+  background-color: rgb(1, 1, 26) !important; /* Ensures the background color applies */
+  color: rgb(0, 0, 0) !important; /* Ensures the arrow color applies */
+  cursor: pointer;
+}
+
+/* Default arrow positioning */
+.slick-prev {
+  left: -60px !important; /* Moves left arrow */
+  content: '←';
+  font-size: 24px;
+}
+
+.slick-next {
+  right: -60px !important; /* Moves right arrow */
+  content: '→';
+  font-size: 24px;
+}
+
+/* Icon styling for arrows */
+.slick-prev::before {
+  content: '←'; /* Remove default arrow icons */
+  font-size: 24px;
+}
+
+.slick-next::before {
+  content: '→'; /* Remove default arrow icons */
+  font-size: 24px;
+}
+
+.slick-prev::after {
+  content: '←'; /* Left arrow */
+  font-size: 24px;
+}
+
+.slick-next::after {
+  content: '→'; /* Right arrow */
+  font-size: 24px;
+}
+
+/* Hover effect */
+.slick-prev:hover, .slick-next:hover {
+  background-color: #000000 !important; /* Black background on hover */
+  color: #ffffff !important; /* White arrow on hover */
+  transform: translateY(-50%) scale(1.1) !important; /* Slight scaling */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4) !important; /* Enhanced shadow */
+}
+
+/* Move effect on hover */
+.slick-prev:hover {
+  transform: translateY(-50%) translateX(-5px) !important; /* Move left */
+}
+
+.slick-next:hover {
+  transform: translateY(-50%) translateX(5px) !important; /* Move right */
+}
+
+/* Reset arrow on hover out */
+.slick-prev, .slick-next {
+  transition: all 0.2s ease-in-out !important; /* Smooth reset */
+}
+
+
+/* carusel arrow buttons */
+
+
+/* sidebar */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.open-sidebar-btn {
+  position: default;
+  /* background-color: #007bff; */
+  color: white;
+  border: none;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  font-size: 130%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #33054c;
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1100;
+}
+
+.sidebar-open {
+  left: 0;
+}
+
+.close-sidebar-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 0;
+}
+
+.sidebar-menu li {
+  margin: 15px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidebar-menu li a{
+  text-decoration: none;
+  color: rgb(231, 238, 240);
+}
+
+.sidebar-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Overlay for dim effect */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.overlay-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* sidebar */
+
+
+/* loginModal */
+/* Button to open the modal */
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* spinner */
+.loading-spinner {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message.loading {
+  color: #007bff;
+}
+
+.message.error {
+  color: red;
+}
+/* loginModal */
+
+/* loader */
+/* Loader Overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Spinner Styling */
+.loader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* loader */
+
+
+
+/* Login page */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+.login-container .form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-container .form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
